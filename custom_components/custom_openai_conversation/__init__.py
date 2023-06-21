@@ -10,7 +10,7 @@ from openai import error
 
 from homeassistant.components import conversation
 from homeassistant.config_entries import ConfigEntry
-from homeassistant.const import CONF_API_KEY, CONF_API_BASE, MATCH_ALL
+from homeassistant.const import CONF_API_KEY, MATCH_ALL
 from homeassistant.core import HomeAssistant
 from homeassistant.exceptions import ConfigEntryNotReady, TemplateError
 from homeassistant.helpers import intent, template
@@ -27,7 +27,7 @@ from .const import (
     DEFAULT_PROMPT,
     DEFAULT_TEMPERATURE,
     DEFAULT_TOP_P,
-    #CONF_API_BASE,
+    CONF_API_BASE,
 )
 
 _LOGGER = logging.getLogger(__name__)

@@ -12,7 +12,7 @@ from openai import error
 import voluptuous as vol
 
 from homeassistant import config_entries
-from homeassistant.const import CONF_API_KEY,CONF_API_BASE
+from homeassistant.const import CONF_API_KEY
 from homeassistant.core import HomeAssistant
 from homeassistant.data_entry_flow import FlowResult
 from homeassistant.helpers.selector import (
@@ -33,6 +33,7 @@ from .const import (
     DEFAULT_TEMPERATURE,
     DEFAULT_TOP_P,
     DOMAIN,
+    CONF_API_BASE,
 )
 
 _LOGGER = logging.getLogger(__name__)
