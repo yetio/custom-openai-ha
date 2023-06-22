@@ -31,4 +31,4 @@ CONF_TOP_P = "top_p"
 DEFAULT_TOP_P = 1
 CONF_TEMPERATURE = "temperature"
 DEFAULT_TEMPERATURE = 0.5
-CONF_API_BASE = "https://api.openai.com/v1"
+CONF_API_BASE = "api_base_url"
