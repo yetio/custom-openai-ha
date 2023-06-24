@@ -48,7 +48,7 @@ async def async_setup_entry(hass: HomeAssistant, entry: ConfigEntry) -> bool:
     except error.OpenAIError as err:
         raise ConfigEntryNotReady(err) from err
 
-    conversation.async_set_agent(hass, entry, CustomOpenAIAgent(hass, entry))
+    conversation.async_set_agent(hass, entry, OpenAIAgent(hass, entry))
     return True
 
 
@@ -61,7 +61,7 @@ async def async_unload_entry(hass: HomeAssistant, entry: ConfigEntry) -> bool:
     return True
 
 
-class CustomOpenAIAgent(conversation.AbstractConversationAgent):
+class OpenAIAgent(conversation.AbstractConversationAgent):
     """OpenAI conversation agent."""
 
     def __init__(self, hass: HomeAssistant, entry: ConfigEntry) -> None:
